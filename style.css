@@ -1,0 +1,57 @@
+/*general body styling */
+body{ background-color:rgb(1, 194, 184);font-family:  Arial, Helvetica, sans-serif;  color:black;font-size: medium;}
+/*header*/
+header{background-color: rgba(12, 238, 182, 0.795);color: rgb(2, 88, 55);padding: 30px; margin: 14px;
+ border-radius: 10px;display: flex; justify-content: space-between; align-items: center;}
+.header-left{ display: flex; flex-direction: column; align-items: flex-start;}
+nav{display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px;}
+nav a{color: rgb(2, 88, 55); text-decoration: none; font-weight: 700; padding: 10px 16px;
+    border: 2px solid transparent; border-radius: 999px; transition: background-color 0.2s ease,
+    color 0.2s ease, border-color 0.2s ease;}
+nav a:hover, nav a:focus-visible{background-color: rgb(2, 88, 55); color: white; border-color: rgb(2, 88, 55);}
+nav a:focus-visible{outline: 3px solid rgba(255, 255, 255, 0.9); outline-offset: 2px;}
+.button{background-color: rgba(2, 63, 27, 0.705);color: white;padding: 12px 25px;border: none;border-radius: 5px; cursor: pointer;}
+ .main-content{background-color: rgb(3, 151, 151); padding: 30px;min-height:400px;}
+ .main-content{word-spacing: -1px;}
+ .container{padding: 15px; margin: 15px 0; border-left: 4px solid rgb(8, 180, 180);}
+ .site-footer{ background-color: rgb(2, 109, 102);color: rgb(216, 225, 226); padding: 30px; text-align: center; margin-top: 20px;border-radius: 10px;}
+ .site-footer h4{font-size: 20px; margin-bottom: 10px;}
+ .site-footer p{ font-size: 16px;margin: 10px 0;}
+ .contact-form {max-width: 600px;margin: 30px auto;padding: 30px;background-color: rgb(9, 206, 173);border: 1px solid #03685a;border-radius: 12px;box-shadow: 0 4px 12px rgba(0,0,0,0.08);}
+.contact-form label {display: block;margin-bottom: 8px;font-weight: bold;color: #055551;}
+.contact-form input,
+.contact-form textarea {width: 100%;padding: 12px;margin-bottom: 18px;border: 1px solid #06ecba;border-radius: 6px;box-sizing: border-box;
+font-size: 15px;}
+.contact-form textarea {min-height: 120px; resize: vertical;}
+.contact-form input:focus,
+.contact-form textarea:focus{ outline: none; border-color: #07877e;}
+.contact-form button {background-color: #075E59;color: white;padding: 12px 25px;border: none;border-radius: 6px;
+    cursor: pointer;}
+ /* WHY CHOOSE US HEADING */
+ .why-heading { text-align: center; color: #075E59;font-size: 30px;margin-bottom: 30px;}
+/* THE FOUR CARDS */
+.why-list { list-style: none;display: grid;grid-template-columns: repeat(4, 1fr);gap: 20px;padding: 0;margin: 20px 0;}
+/* INDIVIDUAL CARD */
+.why-card {background-color: rgb(226, 238, 235); border: 1px solid #b8deda;
+    border-radius: 12px;padding: 25px 15px;text-align: center;box-shadow: 0 4px 10px rgba(0,0,0,0.08);}
+/* ICONS */
+.why-card img {width: 65px;height: 65px;object-fit: contain;margin-bottom: 12px;}
+/* CARD TEXT */
+.why-card p {color: #010707;font-weight: bold;font-size: 16px; margin: 0;}
+/* HOVER EFFECT */
+.why-card:hover {transform: translateY(-5px);transition: 0.3s;border-color: #3dc5bc;}
+.services-section {padding: 40px 20px;background-color: #05f7ce;}
+.services-heading {text-align: center;color: #075E59;font-size: 30px;margin-bottom: 30px;}
+.services-container {display: grid;grid-template-columns: repeat(3, 1fr);gap: 20px;}
+.service-card {background-color: white;border: 1px solid #01776b;border-radius: 12px;padding: 25px;text-align: center;box-shadow: 0 4px 10px rgba(0,0,0,0.08);}
+.service-card img {width: 65px;height: 65px;object-fit: contain;margin-bottom: 12px;}
+.service-card h3 {color: #075E59;font-size: 17px;}
+.service-card:hover {transform: translateY(-5px);transition: 0.3s;}
+.services-text {text-align: center;color: #444;margin-top: 30px;}
+@media (max-width: 768px) {.services-container {grid-template-columns: repeat(2, 1fr);}}
+@media (max-width: 480px) {
+    .services-container {grid-template-columns: 1fr;}
+    header {padding: 20px; align-items: flex-start;}
+    nav {gap: 6px;}
+    nav a {padding: 8px 11px; font-size: 14px;}
+}
